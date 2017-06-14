@@ -38,66 +38,27 @@
   <div class="row">
     <div class="col offset-s4">
         <div class = "row">
+          <h5>ini module patient</h5>
           <table>
           <thead>
             <tr>
                 <th>Nama Pasien</th>
-                <th>Tanggal Lahir</th>
-                <th>Gender</th>
-                <th>Alamat</th>
-                <th>Option</th>
+                <th>Diagnosis</th>
+                <th>Tanggal Periksa</th>
+                <th>Status</th>
             </tr>
           </thead>
 
           <tbody>
-
-            <% data_patient.forEach(patient =>{ %>
-              <tr>
-                <td><%= patient.nama %></td>
-                <td><%= patient.tanggal_lahir %></td>
-                <td><%= patient.gender %></td>
-                <td><%=  patient.alamat %></td>
-                <td><a href="/patients/edit/<%= patient.id %>">Edit</a>
-                  <a href="/patients/delete/<%= patient.id %>">Delete</a>
-                </td>
-              </tr>
-            <%}) %>
-
-
+            <tr>
+              <td>Andi</td>
+              <td>Sakit Perut</td>
+              <td>14-01-1995</td>
+              <td>Recovery</td>
+            </tr>
           </tbody>
         </table>
       </div>
-      <br><br>
-      <form action="/patients/add" method="post">
-      <div class="row">
-        <div class="input-field col s6">
-          <label for="name"> Name </label>
-          <input type="text" id="name" name="name">
-        </div>
-        <div class="input-field col s6">
-          <select name="gender">
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-          </select>
-          <label> Gender </label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input type="date" class="datepicker" name="tanggal_lahir" id="tanggal_periksa">
-          <label for="tanggal_periksa"> Tanggal Lahir </label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <textarea id="textarea1" name="alamat" class="materialize-textarea"></textarea>
-          <label for="textarea1">Alamat</label>
-        </div>
-      </div>
-      <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-      <i class="material-icons right">send</i>
-      </button>
-    </form>
     </div>
   </div>
 

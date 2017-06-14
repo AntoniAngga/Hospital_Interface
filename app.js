@@ -25,9 +25,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/employee',employee);
-app.use('/dokter',dokter);
-app.use('/patient',patient);
+app.use('/admin',employee)
+
+app.use('/dokters',dokter);
+app.use('/patients',patient);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
