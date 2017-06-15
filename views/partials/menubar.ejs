@@ -1,0 +1,33 @@
+<ul id="slide-out" class="side-nav show" style="transform: translateX(0px);">
+  <li>
+      <div class="userView">
+        <div class="background">
+          <img width="300" src="https://dailypost.files.wordpress.com/2015/04/turnpike-blur.jpg">
+        </div>
+        <a href="#!user"><img class="circle" src="https://avatars1.githubusercontent.com/u/26373504?v=3&s=400"></a>
+        <a href="#!name"><span class="white-text name"><%=user.name%></span></a>
+        <a href="#!email"><span class="white-text email"><%=user.email%></span></a>
+    </div>
+  </li>
+    <li><a href="/mainmenu"><i class="material-icons">contacts</i>Welcome <%=user.role%></a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="waves-effect" href="/admin">Admin</a></li>
+    <li class="no-padding">
+      <ul class="collapsible collapsible-accordion">
+        <li>
+          <a class="collapsible-header">Dokter<i class="material-icons">arrow_drop_down</i></a>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="/dokters/add/">Add Data</a></li>
+              <li><a href="/dokters/showTable">Show Table</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <li><a class="waves-effect" href="/patients">Patient</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="waves-effect" href="/logout">Logout</a></li>
+    <ul class="collapsible collapsible-accordion">
+  </ul>
+</ul>

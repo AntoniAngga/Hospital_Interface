@@ -6,12 +6,12 @@ module.exports = function(sequelize, DataTypes) {
     status: DataTypes.STRING,
     id_pasien: DataTypes.INTEGER,
     id_employee: DataTypes.INTEGER
-  }, {
-    classMethods: {
-      associate: function(models) {
-        // associations can be defined here
-      }
-    }
-  });
+  })
+  
+  Diagnosis.associate = function(models){
+    Diagnosis.belongsTo(models.Patient,{foreignKey : "id_pasien"})
+    Diagnosis.belongsTo(models.Employee,{foreignKey : "id_employee"})
+  }
+  
   return Diagnosis;
 };

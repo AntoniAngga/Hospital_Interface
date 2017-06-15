@@ -5,12 +5,11 @@ module.exports = function(sequelize, DataTypes) {
     alamat: DataTypes.STRING,
     gender: DataTypes.STRING,
     tanggal_lahir: DataTypes.DATE
-  }, {
-    classMethods: {
-      associate: function(models) {
-        // associations can be defined here
-      }
-    }
-  });
+  })
+  
+  Patient.associate = function(models){
+    Patient.hasMany(models.Diagnosis, {foreignKey: 'id_pasien'})
+  }
+  
   return Patient;
 };
