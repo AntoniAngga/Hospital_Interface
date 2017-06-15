@@ -11,21 +11,7 @@
   </li>
     <li><a href="/mainmenu"><i class="material-icons">contacts</i>Welcome <%=user.role%></a></li>
     <li><div class="divider"></div></li>
-    <li><a class="waves-effect" href="/admin">Admin</a></li>
-    <li class="no-padding">
-      <ul class="collapsible collapsible-accordion">
-        <li>
-          <a class="collapsible-header">Dokter<i class="material-icons">arrow_drop_down</i></a>
-          <div class="collapsible-body">
-            <ul>
-              <li><a href="/dokters/add/">Add Data</a></li>
-              <li><a href="/dokters/showTable">Show Table</a></li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </li>
-    <li><a class="waves-effect" href="/patients">Patient</a></li>
+    <%- helpers.roleMenu(user.role) %>
     <li><div class="divider"></div></li>
     <li><a class="waves-effect" href="/logout">Logout</a></li>
     <ul class="collapsible collapsible-accordion">
