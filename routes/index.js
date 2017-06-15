@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const db = require('../models');
+const viewHelper = require('../helpers/helpFunction');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -24,7 +25,10 @@ router.post('/doLogin', (req,res) =>{
   })
 })
 
+
+
 router.get('/mainmenu', function(req, res, next) {
+  res.locals.helper = viewHelper
   let userLogin = req.session.login_user
   res.render('mainmenu', {user : userLogin});
 });
