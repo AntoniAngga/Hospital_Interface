@@ -1,44 +1,11 @@
 <% include ./partials/head %>
 <body>
   <div class="row">
-  <ul id="slide-out" class="side-nav show" style="transform: translateX(0px);">
-    <li>
-        <div class="userView">
-          <div class="background">
-            <img width="300" src="https://dailypost.files.wordpress.com/2015/04/turnpike-blur.jpg">
-          </div>
-          <a href="#!user"><img class="circle" src="https://avatars1.githubusercontent.com/u/26373504?v=3&s=400"></a>
-          <a href="#!name"><span class="white-text name">Antoni Angga</span></a>
-          <a href="#!email"><span class="white-text email">antoniangga14@gmail.com</span></a>
-      </div>
-    </li>
-      <li><a href="#!"><i class="material-icons">contacts</i>Welcome Admin</a></li>
-      <li><div class="divider"></div></li>
-      <li><a class="waves-effect" href="/admin">Admin</a></li>
-      <li class="no-padding">
-        <ul class="collapsible collapsible-accordion">
-          <li>
-            <a class="collapsible-header">Dokter<i class="material-icons">arrow_drop_down</i></a>
-            <div class="collapsible-body">
-              <ul>
-                <li><a href="/dokters/add/">Add Data</a></li>
-                <li><a href="/dokters/showTable">Show Table</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </li>
-      <li><a class="waves-effect" href="/patients">Patient</a></li>
-      <li><div class="divider"></div></li>
-      <li><a class="waves-effect" href="#!">Logout</a></li>
-      <ul class="collapsible collapsible-accordion"></ul>
-
-  </ul>
+  <% include ./partials/menubar %>
   </div>
   <div class="row">
     <div class="col offset-s4">
         <div class = "row">
-          <h5>ini module patient</h5>
           <table>
           <thead>
             <tr>
@@ -46,16 +13,25 @@
                 <th>Diagnosis</th>
                 <th>Tanggal Periksa</th>
                 <th>Status</th>
+                <th>Dokter</th>
+                <th>Option</th>
             </tr>
           </thead>
 
           <tbody>
-            <tr>
-              <td>Andi</td>
-              <td>Sakit Perut</td>
-              <td>14-01-1995</td>
-              <td>Recovery</td>
-            </tr>
+            <%tableJoin.forEach(data => { %>
+              <tr>          
+                <td><%=data.nama_pasien%></td>
+                <td><%=data.penyakit%></td>
+                <td><%=data.tanggal%></td>
+                <td><%=data.status%></td>
+                <td><%=data.nama_dokter%></td>
+                <td>
+                <a href="/dokters/edit/<%=data.id%>"> Edit </a>
+                <a href="/dokters/delete/<%=data.id%>"> Delete</a>
+                </td>
+              </tr> 
+            <%})%>
           </tbody>
         </table>
       </div>

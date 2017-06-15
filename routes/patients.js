@@ -2,12 +2,10 @@ const express= require('express');
 const router = express.Router();
 const db = require('../models');
 
-
-
 router.get('/', (req,res) =>{
   db.Patient.findAll()
   .then(data_patient => {
-    res.render('patient', {data_patient: data_patient});
+    res.render('patient', {user : req.session.login_user,data_patient: data_patient});
   })
   .catch(err =>{
     console.log(err);
@@ -30,6 +28,7 @@ router.post('/add', (req,res) =>{
   .catch((err) =>{
     console.log(err);
   })
+  console.log(dataPatient);
 
 })
 
@@ -38,7 +37,7 @@ router.get('/edit/:id', (req, res) => {
 
   db.Patient.findById(id)
   .then(_data_patient => {
-    res.render('patientEdit', {data_patient: _data_patient});
+    res.render('patientEdit', {user : req.session.login_user, data_patient: _data_patient});
   })
   .catch(err =>{
     console.log(err);

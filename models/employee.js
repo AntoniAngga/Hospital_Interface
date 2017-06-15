@@ -4,13 +4,13 @@ module.exports = function(sequelize, DataTypes) {
     nama: DataTypes.STRING,
     username: DataTypes.STRING,
     password: DataTypes.STRING,
-    role: DataTypes.STRING
-  }, {
-    classMethods: {
-      associate: function(models) {
-        // associations can be defined here
-      }
-    }
-  });
+    role: DataTypes.STRING,
+    email : DataTypes.STRING
+  })
+  
+  Employee.associate = function(models){
+    Employee.hasMany(models.Diagnosis, {foreignKey: 'id_employee'})
+  }
+  
   return Employee;
 };

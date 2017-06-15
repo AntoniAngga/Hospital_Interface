@@ -1,36 +1,7 @@
 <% include ./partials/head %>
 <body>
   <div class="row">
-  <ul id="slide-out" class="side-nav show" style="transform: translateX(0px);">
-    <li>
-        <div class="userView">
-          <div class="background">
-            <img width="300" src="https://dailypost.files.wordpress.com/2015/04/turnpike-blur.jpg">
-          </div>
-          <a href="#!user"><img class="circle" src="https://avatars1.githubusercontent.com/u/26373504?v=3&s=400"></a>
-          <a href="#!name"><span class="white-text name">Antoni Angga</span></a>
-          <a href="#!email"><span class="white-text email">antoniangga14@gmail.com</span></a>
-      </div>
-    </li>
-      <li><a href="#!"><i class="material-icons">contacts</i>Welcome Admin</a></li>
-      <li><div class="divider"></div></li>
-      <li><a class="waves-effect" href="/admin">Admin</a></li>
-      <li class="no-padding">
-        <ul class="collapsible collapsible-accordion">
-          <li>
-            <a class="collapsible-header">Dokter<i class="material-icons">arrow_drop_down</i></a>
-            <div class="collapsible-body">
-              <ul>
-                <li><a href="/dokters/add/">Add Data</a></li>
-                <li><a href="/dokters/showTable">Show Table</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </li>
-      <li><a class="waves-effect" href="/patients">Patient</a></li>
-      <li><div class="divider"></div></li>
-      <li><a class="waves-effect" href="#!">Logout</a></li>
+  <% include ./partials/menubar %>
   </div>
   <div class="row">
     <div class="col offset-s4">
@@ -40,6 +11,7 @@
             <th>Nama Employee</th>
             <th>Username</th>
             <th>Password</th>
+            <th>Email</th>
             <th>Role</th>
             <th>option</th>
         </tr>
@@ -51,6 +23,7 @@
             <td><%=employee.nama%></td>
             <td><%=employee.username%></td>
             <td><%=employee.password%></td>
+            <td><%=employee.email%></td>
             <td><%=employee.role%></td>
             <td>
               <a href="/admin/edit/<%=employee.id%>">edit</a>
@@ -65,28 +38,29 @@
     <form action="/admin/add" method="post">
       <div class="padding">
       <div class="row">
-        <div class="input-field col s8">
+        <div class="input-field col s12">
           <input placeholder="Nama Employee" name = "nama" id="nama" type="text" class="validate">
           <label for="first_name">Nama</label>
         </div>
       <div class="row">
-        <div class="input-field col s12">
+        <div class="input-field col s6">
           <input id="username" name="username" type="text" class="validate">
           <label for="username">Username</label>
         </div>
-      </div>
-      <div class="row">
         <div class="input-field col s6">
           <input id="password" name="password" type="password" class="validate">
           <label for="password">Password</label>
         </div>
       </div>
       <div class="row">
-        <div class="input-field col s4">
+        <div class="input-field col s6">
+          <input id="email" name="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field col s6">
         <select name="role">
           <option value="Admin">Admin</option>
           <option value="Dokter">Dokter</option>
-          <option value="Pasien">Pasien</option>
         </select>
       </div>
     </div>
@@ -96,8 +70,6 @@
   </form>
 
     <div>
-
-
     </div>
     </div>
     </div>

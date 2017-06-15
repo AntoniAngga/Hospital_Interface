@@ -8,7 +8,8 @@ router.get('/', (req,res) => {
 
   db.Employee.findAll()
   .then(data_employee => {
-    res.render('admin',{ data_employee: data_employee});
+    let userLogin = req.session.login_user
+    res.render('admin',{ user : userLogin, data_employee: data_employee});
     // console.log(data_employee);
   })
   .catch(err => {
@@ -22,7 +23,8 @@ router.post('/add', (req, res) =>{
     nama: data.nama,
     username: data.username,
     password: data.password,
-    role: data.role
+    role: data.role,
+    email : data.email
   })
   .then(() =>{
     res.redirect('/admin')
@@ -34,10 +36,11 @@ router.post('/add', (req, res) =>{
 
 router.get('/edit/:id',(req,res)=>{
   let id = req.params.id
+  let userLogin = req.session.login_user
   db.Employee.findOne({
     where : {id:id}
   }).then((_employee) => {
-    res.render('AdminEdit', {employees : _employee});
+    res.render('AdminEdit', {user : userLogin, employees : _employee});
   })
   .catch(err => {
     console.log(err);
