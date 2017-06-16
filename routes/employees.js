@@ -11,6 +11,7 @@ router.get('/', (req,res) => {
     let userLogin = req.session.login_user
     res.render('admin',{ user : userLogin, data_employee: data_employee});
     // console.log(data_employee);
+
   })
   .catch(err => {
     console.log(err);

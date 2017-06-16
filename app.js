@@ -33,7 +33,7 @@ app.use(session({
 }))
 
 app.use('/', index);
-app.use('/admin',employee)
+app.use('/admin',employee);
 
 app.use('/dokters',dokter);
 app.use('/patients',patient);
