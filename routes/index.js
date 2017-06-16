@@ -30,7 +30,16 @@ router.post('/doLogin', (req,res) =>{
 router.get('/mainmenu', function(req, res, next) {
   res.locals.helper = viewHelper
   let userLogin = req.session.login_user
-  res.render('mainmenu', {user : userLogin});
+  db.sequelize.query(`select "penyakit", Count("Diagnoses"."penyakit") from "Diagnoses"
+group by "penyakit"`, { type: db.sequelize.QueryTypes.SELECT})
+.then(data =>{
+  let DataArray = [['Penyakit',"Jumlah"]];
+  data.forEach(d => {
+     DataArray.push([d.penyakit,+d.count]);
+  })
+  res.render('mainmenu', {user : userLogin, DataArray : DataArray});
+  console.log(DataArray);
+})
 });
 
 
