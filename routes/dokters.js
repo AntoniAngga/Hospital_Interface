@@ -5,7 +5,7 @@ const db = require('../models')
 router.get('/', (req,res) =>{
   let userLogin = req.session.login_user
   res.render('dokter',{user : userLogin,dokter:"Welcome To Dokter"});
-})
+});
 
 router.get('/showTable', (req,res) =>{
   db.sequelize.query(`select "Patients"."nama" as "nama_pasien", "Diagnoses"."penyakit", "Diagnoses"."id", "Diagnoses"."tanggal","Diagnoses"."status", "Employees"."nama" as "nama_dokter" from "Diagnoses"
@@ -14,7 +14,7 @@ router.get('/showTable', (req,res) =>{
   .then(tableJoin => {
     res.render('DokterShowTable', {user : req.session.login_user, tableJoin : tableJoin})
   })
-})
+});
 
 router.get('/add', (req,res) =>{
   db.Patient.findAll()
@@ -23,7 +23,7 @@ router.get('/add', (req,res) =>{
   }).catch(err => {
     console.log(err);
   })
-})
+});
 
 router.post('/add', (req,res) =>{
   let data = req.body
