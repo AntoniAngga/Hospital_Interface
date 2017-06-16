@@ -17,7 +17,7 @@ module.exports = {
       alamat: 'Jl Raya Pondok Indah no. 14, Jakarta Selatan',
       diagnosis: 'sakit perut',
       gender: 'pria',
-      tanggal_lahir: '1999-10-10',
+      tanggal_lahir: new Date('1998-01-11'),
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -25,7 +25,7 @@ module.exports = {
       alamat: 'Jl Pal Batu 3 Tebet Jakarta Selatan',
       diagnosis: 'sakit gigi',
       gender: 'pria',
-      tanggal_lahir: '1990-09-10',
+      tanggal_lahir: new Date('1977-12-11'),
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -33,7 +33,7 @@ module.exports = {
       alamat: 'Jl Jatinegara timur 3, Jakarta Timur',
       diagnosis: 'sakit kepala',
       gender: 'pria',
-      tanggal_lahir: '2000-03-24',
+      tanggal_lahir: new Date('1997-06-21'),
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -41,7 +41,7 @@ module.exports = {
       alamat: 'Jl Anggur, Jakarta Utara',
       diagnosis: 'sakit kepala',
       gender: 'pria',
-      tanggal_lahir: '1988-01-27',
+      tanggal_lahir: new Date('2000-03-17'),
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -49,7 +49,7 @@ module.exports = {
       alamat: 'Jl Pete, Jakarta Timur',
       diagnosis: 'sakit gigi',
       gender: 'wanita',
-      tanggal_lahir: '1997-03-14',
+      tanggal_lahir: new Date('1990-07-16'),
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -57,7 +57,7 @@ module.exports = {
       alamat: 'Jl Jend. Sudirman, Jakarta Pusat',
       diagnosis: 'sakit hati',
       gender: 'wanita',
-      tanggal_lahir: '1997-04-19',
+      tanggal_lahir: new Date('1961-01-21'),
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -65,7 +65,7 @@ module.exports = {
       alamat: 'Jl Kacang Polong, Jakarta Barat',
       diagnosis: 'sakit tenggorokan',
       gender: 'pria',
-      tanggal_lahir: '1991-11-21',
+      tanggal_lahir: new Date('1978-04-14'),
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -73,7 +73,7 @@ module.exports = {
       alamat: 'Jl Suaka, Jakarta Pusat',
       diagnosis: 'sakit encok',
       gender: 'wanita',
-      tanggal_lahir: '1978-11-23',
+      tanggal_lahir: new Date('1988-03-10'),
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -81,7 +81,7 @@ module.exports = {
       alamat: 'Jl Panglima Polim, Jakarta Selatan',
       diagnosis: 'sakit sariawan',
       gender: 'wanita',
-      tanggal_lahir: '1987-01-01',
+      tanggal_lahir: new Date('1979-07-17'),
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -89,7 +89,7 @@ module.exports = {
       alamat: 'Jl Tebet timur dalam, Jakarta Selatan',
       diagnosis: 'sakit perut',
       gender: 'wanita',
-      tanggal_lahir: '1992-05-19',
+      tanggal_lahir: new Date('1990-02-18'),
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -97,7 +97,7 @@ module.exports = {
       alamat: 'Jl Kober Kecil, Jakarta Timur',
       diagnosis: 'sakit perut',
       gender: 'pria',
-      tanggal_lahir: '1981-08-17',
+      tanggal_lahir: new Date('2000-05-11'),
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -105,7 +105,7 @@ module.exports = {
       alamat: 'Jl Cassablanka no. 14, Jakarta Selatan',
       diagnosis: 'sakit jiwa',
       gender: 'wanita',
-      tanggal_lahir: '1989-02-10',
+      tanggal_lahir: new Date('1993-01-11'),
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -113,7 +113,7 @@ module.exports = {
       alamat: 'Jl Rasuna Said, Jakarta Selatan',
       diagnosis: 'sakit gigi',
       gender: 'pria',
-      tanggal_lahir: '1977-03-21',
+      tanggal_lahir: new Date('1999-08-18'),
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -121,7 +121,7 @@ module.exports = {
       alamat: 'Jl Pemuda 3, Jakarta Timur',
       diagnosis: 'sakit tenggorokan',
       gender: 'pria',
-      tanggal_lahir: '1977-07-07',
+      tanggal_lahir: new Date('1986-07-18'),
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -129,7 +129,7 @@ module.exports = {
       alamat: 'Jl Sembako, Jakarta Utara',
       diagnosis: 'sakit kepala',
       gender: 'pria',
-      tanggal_lahir: '1978-08-21',
+      tanggal_lahir: new Date('1990-04-21'),
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -137,7 +137,7 @@ module.exports = {
       alamat: 'Jl Rambutan, Jakarta Timur',
       diagnosis: 'sakit jiwa',
       gender: 'pria',
-      tanggal_lahir: '1992-02-22',
+      tanggal_lahir: new Date('1968-11-11'),
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -145,7 +145,7 @@ module.exports = {
       alamat: 'Jl Gatot Subroto, Jakarta Selatan',
       diagnosis: 'sakit kepala',
       gender: 'pria',
-      tanggal_lahir: '1979-03-29',
+      tanggal_lahir: new Date('1978-07-07'),
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -153,7 +153,7 @@ module.exports = {
       alamat: 'Jl Karet Belakang, Jakarta Selatan',
       diagnosis: 'sakit kepala',
       gender: 'pria',
-      tanggal_lahir: '1987-04-24',
+      tanggal_lahir: new Date('1996-06-16'),
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -161,7 +161,7 @@ module.exports = {
       alamat: 'Jl Karet Tengsin, Jakarta Pusat',
       diagnosis: 'sakit hati',
       gender: 'wanita',
-      tanggal_lahir: '1969-12-01',
+      tanggal_lahir: new Date('2001-12-12'),
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -169,7 +169,7 @@ module.exports = {
       alamat: 'Jl Gajah Mada, Jakarta Barat',
       diagnosis: 'sakit gigi',
       gender: 'pria',
-      tanggal_lahir: '1999-09-19',
+      tanggal_lahir: new Date('1991-03-13'),
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -177,7 +177,7 @@ module.exports = {
       alamat: 'Jl Gotong Royong, Jakarta Selatan',
       diagnosis: 'sakit hati',
       gender: 'wanita',
-      tanggal_lahir: '1962-04-14',
+      tanggal_lahir: new Date('2003-09-11'),
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -185,7 +185,7 @@ module.exports = {
       alamat: 'Jl Ciputat Raya, Jakarta Selatan',
       diagnosis: 'sakit perut',
       gender: 'pria',
-      tanggal_lahir: '1974-03-28',
+      tanggal_lahir: new Date('1998-08-19'),
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -193,7 +193,7 @@ module.exports = {
       alamat: 'Jl Permata, Jakarta Selatan',
       diagnosis: 'sakit perut',
       gender: 'wanita',
-      tanggal_lahir: '1964-03-19',
+      tanggal_lahir: new Date('1977-06-15'),
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -201,7 +201,7 @@ module.exports = {
       alamat: 'Jl Tebet Barat Tebet Jakarta Selatan',
       diagnosis: 'sakit hati',
       gender: 'pria',
-      tanggal_lahir: '1976-05-22',
+      tanggal_lahir: new Date('1962-08-11'),
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -209,7 +209,7 @@ module.exports = {
       alamat: 'Jl Kehakiman, Jakarta Timur',
       diagnosis: 'sakit perut',
       gender: 'pria',
-      tanggal_lahir: '1992-03-02',
+      tanggal_lahir: new Date('1984-11-11'),
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -217,7 +217,7 @@ module.exports = {
       alamat: 'Jl Pepaya, Jakarta Utara',
       diagnosis: 'sakit kepala',
       gender: 'pria',
-      tanggal_lahir: '1995-03-06',
+      tanggal_lahir: new Date('1958-01-15'),
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -225,7 +225,7 @@ module.exports = {
       alamat: 'Jl Umang, Jakarta Timur',
       diagnosis: 'sakit kepala',
       gender: 'pria',
-      tanggal_lahir: '1978-03-25',
+      tanggal_lahir: new Date('1964-04-04'),
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -233,7 +233,7 @@ module.exports = {
       alamat: 'Jl Menteng, Jakarta Pusat',
       diagnosis: 'sakit hati',
       gender: 'wanita',
-      tanggal_lahir: '1977-03-16',
+      tanggal_lahir: new Date('1956-01-21'),
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -241,7 +241,7 @@ module.exports = {
       alamat: 'Jl Manggis, Jakarta Barat',
       diagnosis: 'sakit hati',
       gender: 'wanita',
-      tanggal_lahir: '1981-04-21',
+      tanggal_lahir: new Date('1978-11-25'),
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -249,7 +249,7 @@ module.exports = {
       alamat: 'Jl Posko, Jakarta Pusat',
       diagnosis: 'sakit encok',
       gender: 'pria',
-      tanggal_lahir: '1988-08-18',
+      tanggal_lahir: new Date('1951-06-27'),
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -257,7 +257,7 @@ module.exports = {
       alamat: 'Jl Protokol, Jakarta Selatan',
       diagnosis: 'sakit sariawan',
       gender: 'wanita',
-      tanggal_lahir: '1998-01-21',
+      tanggal_lahir: new Date('1990-09-11'),
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -265,7 +265,7 @@ module.exports = {
       alamat: 'Jl Tebet timur barat, Jakarta Selatan',
       diagnosis: 'sakit perut',
       gender: 'pria',
-      tanggal_lahir: '1977-03-29',
+      tanggal_lahir: new Date('1959-02-12'),
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -273,7 +273,7 @@ module.exports = {
       alamat: 'Jl Kober Kecil, Jakarta Timur',
       diagnosis: 'sakit perut',
       gender: 'pria',
-      tanggal_lahir: '1961-15-21',
+      tanggal_lahir: new Date('1978-10-10'),
       createdAt: new Date(),
       updatedAt: new Date()
     },{
@@ -281,7 +281,7 @@ module.exports = {
         alamat: 'Jl Raya Bekatul no. 14, Jakarta Selatan',
         diagnosis: 'sakit gigi',
         gender: 'wanita',
-        tanggal_lahir: '1951-03-17',
+        tanggal_lahir: new Date('1967-11-13'),
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -289,7 +289,7 @@ module.exports = {
         alamat: 'Jl Permata Tebet Jakarta Selatan',
         diagnosis: 'sakit paru-paru',
         gender: 'pria',
-        tanggal_lahir: '1974-12-12',
+        tanggal_lahir: new Date('1980-05-15'),
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -297,7 +297,7 @@ module.exports = {
         alamat: 'Jl Perkasa, Jakarta Timur',
         diagnosis: 'sakit hati',
         gender: 'pria',
-        tanggal_lahir: '1977-03-21',
+        tanggal_lahir: new Date('1998-01-11'),
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -305,7 +305,7 @@ module.exports = {
         alamat: 'Jl Medioker, Jakarta Utara',
         diagnosis: 'sakit gigi',
         gender: 'wanita',
-        tanggal_lahir: '1976-02-24',
+        tanggal_lahir: new Date('1977-12-11'),
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -313,7 +313,7 @@ module.exports = {
         alamat: 'Jl Gede, Jakarta Timur',
         diagnosis: 'sakit sariawan',
         gender: 'pria',
-        tanggal_lahir: '1987-03-01',
+        tanggal_lahir: new Date('1992-01-21'),
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -321,7 +321,7 @@ module.exports = {
         alamat: 'Jl Semut Merah, Jakarta Pusat',
         diagnosis: 'sakit kepala',
         gender: 'wanita',
-        tanggal_lahir: '1977-09-21',
+        tanggal_lahir: new Date('1978-06-24'),
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -329,7 +329,7 @@ module.exports = {
         alamat: 'Jl Widuri, Jakarta Barat',
         diagnosis: 'sakit kepala',
         gender: 'pria',
-        tanggal_lahir: '1990-01-28',
+        tanggal_lahir: new Date('1964-05-17'),
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -337,7 +337,7 @@ module.exports = {
         alamat: 'Jl Veteran, Jakarta Pusat',
         diagnosis: 'sakit encok',
         gender: 'pria',
-        tanggal_lahir: '1977-03-23',
+        tanggal_lahir: new Date('1970-04-14'),
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -345,7 +345,7 @@ module.exports = {
         alamat: 'Jl Panglima Polim, Jakarta Selatan',
         diagnosis: 'sakit sariawan',
         gender: 'wanita',
-        tanggal_lahir: '1967-01-04',
+        tanggal_lahir: new Date('1958-09-09'),
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -353,7 +353,7 @@ module.exports = {
         alamat: 'Jl Pembangunan, Jakarta Selatan',
         diagnosis: 'sakit perut',
         gender: 'pria',
-        tanggal_lahir: '1975-01-24',
+        tanggal_lahir: new Date('1975-07-13'),
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -361,7 +361,7 @@ module.exports = {
         alamat: 'Jl Kober Kecil, Jakarta Timur',
         diagnosis: 'sakit perut',
         gender: 'pria',
-        tanggal_lahir: '1992-06-19',
+        tanggal_lahir: new Date('1951-12-27'),
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -369,7 +369,7 @@ module.exports = {
         alamat: 'Jl Cassablanka, Jakarta Selatan',
         diagnosis: 'sakit jiwa',
         gender: 'pria',
-        tanggal_lahir: '1977-08-09',
+        tanggal_lahir: new Date('1963-09-01'),
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -377,7 +377,7 @@ module.exports = {
         alamat: 'Jl Pembangunan, Jakarta Selatan',
         diagnosis: 'sakit gigi',
         gender: 'pria',
-        tanggal_lahir: '1975-04-24',
+        tanggal_lahir: new Date('1973-02-19'),
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -385,7 +385,7 @@ module.exports = {
         alamat: 'Jl Bangkit, Jakarta Timur',
         diagnosis: 'sakit tenggorokan',
         gender: 'wanita',
-        tanggal_lahir: '1974-03-18',
+        tanggal_lahir: new Date('1976-12-21'),
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -393,7 +393,7 @@ module.exports = {
         alamat: 'Jl Pluit, Jakarta Utara',
         diagnosis: 'sakit kepala',
         gender: 'wanita',
-        tanggal_lahir: '1977-03-21',
+        tanggal_lahir: new Date('1983-02-21'),
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -401,7 +401,7 @@ module.exports = {
         alamat: 'Jl Pakuan, Jakarta Timur',
         diagnosis: 'sakit jiwa',
         gender: 'pria',
-        tanggal_lahir: '1980-07-25',
+        tanggal_lahir: new Date('1993-12-12'),
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -409,7 +409,7 @@ module.exports = {
         alamat: 'Jl Gatot Subroto, Jakarta Selatan',
         diagnosis: 'sakit kepala',
         gender: 'pria',
-        tanggal_lahir: '1985-04-21',
+        tanggal_lahir: new Date('1965-11-21'),
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -417,7 +417,7 @@ module.exports = {
         alamat: 'Jl manggis, Jakarta Selatan',
         diagnosis: 'sakit kepala',
         gender: 'pria',
-        tanggal_lahir: '1992-02-21',
+        tanggal_lahir: new Date('1973-10-23'),
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -425,7 +425,7 @@ module.exports = {
         alamat: 'Jl Flamboyan, Jakarta Pusat',
         diagnosis: 'sakit hati',
         gender: 'pria',
-        tanggal_lahir: '1993-12-21',
+        tanggal_lahir: new Date('1993-12-21'),
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -433,7 +433,7 @@ module.exports = {
         alamat: 'Jl Paris, Jakarta Barat',
         diagnosis: 'sakit gigi',
         gender: 'pria',
-        tanggal_lahir: '1990-06-08',
+        tanggal_lahir: new Date('1990-06-08'),
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -441,7 +441,7 @@ module.exports = {
         alamat: 'Jl Pemuda, Jakarta Selatan',
         diagnosis: 'sakit hati',
         gender: 'pria',
-        tanggal_lahir: '1979-04-22',
+        tanggal_lahir: new Date('1979-04-22'),
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -449,7 +449,7 @@ module.exports = {
         alamat: 'Jl Jeruk, Jakarta Selatan',
         diagnosis: 'sakit perut',
         gender: 'pria',
-        tanggal_lahir: '1974-06-27',
+        tanggal_lahir: new Date('1974-06-27'),
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -457,7 +457,7 @@ module.exports = {
         alamat: 'Jl Kucing, Jakarta Selatan',
         diagnosis: 'sakit perut',
         gender: 'pria',
-        tanggal_lahir: '1973-03-13',
+        tanggal_lahir: new Date('1973-03-12'),
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -465,7 +465,7 @@ module.exports = {
         alamat: 'Jl Bangau, Jakarta Selatan',
         diagnosis: 'sakit hati',
         gender: 'pria',
-        tanggal_lahir: '1978-08-28',
+        tanggal_lahir: new Date('1948-05-15'),
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -473,7 +473,7 @@ module.exports = {
         alamat: 'Jl Kebagusan, Jakarta Timur',
         diagnosis: 'sakit perut',
         gender: 'pria',
-        tanggal_lahir: '1999-09-19',
+        tanggal_lahir: new Date('1999-09-19'),
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -481,7 +481,7 @@ module.exports = {
         alamat: 'Jl Buaya, Jakarta Utara',
         diagnosis: 'sakit kepala',
         gender: 'wanita',
-        tanggal_lahir: '1979-09-19',
+        tanggal_lahir: new Date('1956-04-14'),
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -489,7 +489,7 @@ module.exports = {
         alamat: 'Jl Diponegoro, Jakarta Timur',
         diagnosis: 'sakit kepala',
         gender: 'pria',
-        tanggal_lahir: '1980-07-20',
+        tanggal_lahir: new Date('1998-01-11'),
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -497,7 +497,7 @@ module.exports = {
         alamat: 'Jl Milano, Jakarta Pusat',
         diagnosis: 'sakit hati',
         gender: 'pria',
-        tanggal_lahir: '1979-08-28',
+        tanggal_lahir: new Date('1979-08-28'),
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -505,7 +505,7 @@ module.exports = {
         alamat: 'Jl Pluit, Jakarta Utara',
         diagnosis: 'sakit hati',
         gender: 'wanita',
-        tanggal_lahir: '1977-03-19',
+        tanggal_lahir: new Date('1977-03-19'),
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -513,7 +513,7 @@ module.exports = {
         alamat: 'Jl Tunas Merdeka, Jakarta Pusat',
         diagnosis: 'sakit encok',
         gender: 'wanita',
-        tanggal_lahir: '1974-05-06',
+        tanggal_lahir: new Date('1974-04-14'),
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -521,7 +521,7 @@ module.exports = {
         alamat: 'Jl Pegangsaan Dua, Jakarta Utara',
         diagnosis: 'sakit sariawan',
         gender: 'wanita',
-        tanggal_lahir: '1971-11-21',
+        tanggal_lahir: new Date('1971-06-21'),
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -529,7 +529,7 @@ module.exports = {
         alamat: 'Jl Cabe, Jakarta Selatan',
         diagnosis: 'sakit perut',
         gender: 'pria',
-        tanggal_lahir: '1976-07-18',
+        tanggal_lahir: new Date('1976-07-18'),
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -537,7 +537,7 @@ module.exports = {
         alamat: 'Jl Flamboyan, Jakarta Timur',
         diagnosis: 'sakit perut',
         gender: 'pria',
-        tanggal_lahir: '1977-03-21',
+        tanggal_lahir: new Date('1977-03-21'),
         createdAt: new Date(),
         updatedAt: new Date()
       },{
@@ -545,7 +545,7 @@ module.exports = {
         alamat: 'Jl Beo, Jakarta Timur',
         diagnosis: 'sakit hati',
         gender: 'wanita',
-        tanggal_lahir: '1987-07-27',
+        tanggal_lahir: new Date('1997-11-27'),
         createdAt: new Date(),
         updatedAt: new Date()
       }], {});
