@@ -13,7 +13,7 @@ module.exports = {
       }], {});
     */
     return queryInterface.bulkInsert('Diagnoses', [{
-      penyakit: 'sakit perut',
+      penyakit: 'Sakit Perut',
       tanggal: '2017-06-12',
       status: 'belum sembuh',
       id_pasien: 1,

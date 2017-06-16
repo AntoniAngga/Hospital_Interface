@@ -5,8 +5,8 @@
   </div>
   <div class="row">
     <div class="col offset-s4">
-        <% include ./partials/PieCharts %>
-        <h5>Today You Have Report this</h5>
+        <%- include('./partials/PieCharts', {data: JSON.stringify(DataArray)}) %>
+        <h5>Welcome <%=user.name%></h5>
         <div id="piechart" style="width: 900px; height: 500px;"></div>
     </div>
   </div>
@@ -15,3 +15,5 @@
 </body>
 
 <% include ./partials/footer %>
+
+
