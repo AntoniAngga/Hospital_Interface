@@ -1,7 +1,7 @@
 {
   "development": {
-    "username": "antoniangga",
-    "password": null,
+    "username": "postgres",
+    "password": "1234",
     "database": "hospital_express",
     "host": "127.0.0.1",
     "dialect": "postgres"
